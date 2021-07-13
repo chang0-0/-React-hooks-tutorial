@@ -16,6 +16,12 @@ const Info = () => {
     nickname: "",
   });
 
+  //기존에는 input이 여러개여서 useState를 여러 번 사용햇는데, useReducer를 사용하면 기존에 클래스형 컴포넌트에서 input 태그에 name 값을 할당하고
+  //e.target.name을 참조하여 setState를 해준 것과 유사한 방식으로 작업을 처리할 수 있습니다.
+
+  /*⭐ 기존 코드 onChangeName, onChangeNickname으로 2개였던 상태값 변환 함수를 하나로 통합 시켰음
+  set함수 사용X dispatch 사용 Reducer를 적용했음  */
+
   const { name, nickname } = state;
   const onChange = (e) => {
     dispatch(e.target);
