@@ -1,14 +1,24 @@
 import React, { useState } from "react";
 import "./App.css";
+import Average from "./components/Average";
 import Counter from "./components/Counter";
 import Info from "./components/Info";
+import ValidationSample from "./components/ValidationSample";
 
 function App() {
   const [visible, setVisible] = useState(false);
 
   return (
     <div className="App">
-      <button
+      <ValidationSample />
+    </div>
+  );
+}
+
+export default App;
+
+{
+  /* <button
         onClick={() => {
           setVisible(!visible);
         }}
@@ -19,9 +29,5 @@ function App() {
         <div>
           <Info /> <hr />
         </div>
-      )}
-    </div>
-  );
+      )} */
 }
-
-export default App;
