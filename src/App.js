@@ -1,16 +1,17 @@
-import React, { useState } from "react";
+import { render } from "@testing-library/react";
+import React, { useState, Component } from "react";
 import "./App.css";
 import Average from "./components/Average";
 import Counter from "./components/Counter";
 import Info from "./components/Info";
+import LifeCycleSample from "./components/LifeCycleSample";
 import ValidationSample from "./components/ValidationSample";
+import WeakList from "./components/weakList";
 
 function App() {
-  const [visible, setVisible] = useState(false);
-
   return (
     <div className="App">
-      <ValidationSample />
+      <WeakList />
     </div>
   );
 }

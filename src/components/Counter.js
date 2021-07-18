@@ -32,4 +32,7 @@ const Counter = () => {
   );
 };
 
+//onClick={() => dispatch({type: ...})}
+// 따로 증가 감소 함수를 만들지않고 자신을 호출하는 화살표 함수를 만들어서 dispatch 실행
+
 export default Counter;
